@@ -1,0 +1,22 @@
+package snippet;
+
+import java.util.Scanner;
+
+public class MultiplicationUsingFor {
+	public static void main(String[] args) {
+		int range;
+		int Multiplication;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the Range");
+		range=s.nextInt();
+		System.out.println("Enter the Multiplication Table you want print");
+		Multiplication=s.nextInt();
+		for(int i=1;i<=range;i++)
+		{
+			System.out.println(i +" * "+Multiplication+ " = " + (i+1));
+		}
+	}
+
+	
+
+}

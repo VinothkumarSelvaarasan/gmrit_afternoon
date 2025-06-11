@@ -1,0 +1,26 @@
+package array;
+
+//package array;
+
+public class DescendingOrder {
+	public static void main(String[] args) {
+		int marks[]= {89,80,90,91,92};
+		int temp;
+		for(int i=0;i<marks.length;i++)
+		{
+			for (int j=i+1;j<marks.length;j++)
+			{
+				if(marks[i]<=marks[j]) {
+					temp=marks[i];
+					marks[i]=marks[j];
+					marks[j]=temp;
+				}
+			}
+		}
+		for(int i=0;i<marks.length;i++)
+		{
+			System.out.print(marks[i]+" "); //Ascending order
+		}
+	}
+
+}
