@@ -1,0 +1,9 @@
+package StringPgm;
+
+public class StringProgram {
+	public static void main(String[] args) {
+		String name="Vinothkumar";
+		System.out.println(name.charAt(4));
+	}
+
+}

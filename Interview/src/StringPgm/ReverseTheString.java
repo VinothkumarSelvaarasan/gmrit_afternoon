@@ -1,0 +1,15 @@
+package StringPgm;
+
+public class ReverseTheString {
+	public static void main(String[] args) {
+		//Scanner s=new Scanner()
+		String name="Vinothkumar Selvaarasan";
+		String reverseString="";
+		for(int i=name.length()-1;i>=0;i--)
+		{
+			reverseString+=name.charAt(i);
+		}
+		System.out.println("Reverse Value is "+reverseString);
+	}
+
+}

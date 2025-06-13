@@ -1,0 +1,35 @@
+package ClassAndObject;
+
+import java.util.Scanner;
+
+public class Registeration {
+	int registerNumber;
+	String name;
+	String emailid;
+	String department;
+	Scanner s=new Scanner(System.in);
+	void getData()
+	{
+		System.out.println("Enter the Register Number ");
+		registerNumber=s.nextInt();
+		System.out.println("Enter the Name ");
+		name=s.next();
+		System.out.println("Enter the Email id ");
+		emailid=s.next();
+		System.out.println("Enter the Department ");
+		department=s.next();
+	}
+	void printdata()
+	{
+		System.out.println("Register Number "+registerNumber);
+		System.out.println("Name is "+name);
+		System.out.println("Email Id "+emailid);
+		System.out.println("Department "+department);
+	}
+	public static void main(String[] args) {
+		Registeration r=new Registeration();
+		r.getData();
+		r.printdata();
+	}
+
+}
